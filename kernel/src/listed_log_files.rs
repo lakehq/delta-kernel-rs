@@ -34,10 +34,10 @@ use url::Url;
 #[derive(Debug)]
 #[internal_api]
 pub(crate) struct ListedLogFiles {
-    pub(crate) ascending_commit_files: Vec<ParsedLogPath>,
-    pub(crate) ascending_compaction_files: Vec<ParsedLogPath>,
-    pub(crate) checkpoint_parts: Vec<ParsedLogPath>,
-    pub(crate) latest_crc_file: Option<ParsedLogPath>,
+    pub ascending_commit_files: Vec<ParsedLogPath>,
+    pub ascending_compaction_files: Vec<ParsedLogPath>,
+    pub checkpoint_parts: Vec<ParsedLogPath>,
+    pub latest_crc_file: Option<ParsedLogPath>,
 }
 
 /// Returns a fallible iterator of [`ParsedLogPath`] that are between the provided `start_version`
